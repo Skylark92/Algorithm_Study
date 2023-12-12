@@ -5,7 +5,7 @@
   "author": "Skylark92 <skylark92@live.co.kr>",
   "license": "MIT",
   "scripts": {
-    "test": "jest --watch --verbose"
+    "test": "jest --verbose"
   },
   "dependencies": {
     "jest": "^29.7.0"

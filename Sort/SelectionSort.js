@@ -2,8 +2,7 @@
 가장 작은 것을 선택해 앞으로 보내기 */
 
 function selectionSort(array) {
-  if (typeof array !== 'object') return;
-  if (!array.length) return;
+  if (!Array.isArray(array)) return;
 
   for (let i = 0; i < array.length; i++) {
     // 전체를 순회하면서

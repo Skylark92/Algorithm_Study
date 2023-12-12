@@ -1,6 +1,7 @@
 const { selectionSort } = require('./SelectionSort'); // 선택 정렬
+const { bubbleSort } = require('./BubbleSort'); // 버블 정렬
 
-const sorts = [selectionSort];
+const sorts = [selectionSort, bubbleSort];
 
 const { case_1, case_2 } = require('../TestCase');
 
