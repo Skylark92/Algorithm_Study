@@ -1,0 +1,13 @@
+{
+  "name": "AlgorithmStudy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Skylark92 <skylark92@live.co.kr>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --watch --verbose"
+  },
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
