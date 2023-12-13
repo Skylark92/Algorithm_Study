@@ -3,6 +3,8 @@
 손에 든 카드를 정리하는 것과 유사함 */
 
 function insertionSort(array) {
+  if (!Array.isArray(array)) return;
+
   for (let i = 0; i < array.length - 1; i++) {
     // 다음 요소(j + 1)와 비교하며 순회하므로 최대 길이 - 1만큼 순회
     let j = i; // 정렬할 대상 인덱스
