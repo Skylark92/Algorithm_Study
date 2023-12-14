@@ -13,8 +13,8 @@ function bubbleSort(array) {
       // 따라서 array.length - i 만큼 순회
       if (array[j] > array[j + 1]) {
         let temp = array[j]; // 위치를 바꾸기 위한 임시 변수
-        array[j + 1] = array[j];
-        array[j] = temp;
+        array[j] = array[j + 1];
+        array[j + 1] = temp;
       }
     }
   }
