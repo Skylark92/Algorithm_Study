@@ -6,7 +6,7 @@ function quickSort(array, start, end) {
   if (!Array.isArray(array)) return;
   if (!(Number.isInteger(start) && Number.isInteger(end))) return;
 
-  if (start >= end) return; // 마지막 단계 등 원소가 하나인 경우 더이상 재귀하지 않게
+  if (start >= end) return array; // 마지막 단계 등 원소가 하나인 경우 더이상 재귀하지 않게
 
   let pivot = start; // 첫 번째 원소를 pivot으로
   let i = start + 1; // pivot 값 보다 큰 원소를 오른쪽에 두기 위한 인덱스
@@ -14,11 +14,11 @@ function quickSort(array, start, end) {
 
   while (i <= j) {
     // i와 j가 엇갈릴 때까지 반복
-    while (i <= end && array[i] <= array[pivot]) {
+    while (i <= end && array[i] <= array[pivot]) { // 내림차순 정렬 시 값을 비교하는 부등호 반대
       // pivot 값 보다 작은 값이 있다면 pivot이 위치를 잡을 때까지 ++
       i++;
     }
-    while (j > start && array[j] >= array[pivot]) {
+    while (j > start && array[j] >= array[pivot]) { // 내림차순 정렬 시 부등호 반대
       // pivot 값 보다 큰 값이 있다면 --
       j--;
     }
